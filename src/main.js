@@ -7,8 +7,8 @@ import store from './store'
 Vue.config.productionTip = false
 
 Promise.all([
-    import('./components/HelloWorld.vue'),
-    import('./components/HelloWorld2.vue')
+    import(/* webpackChunkName: "HelloWorld" */ './components/HelloWorld.vue'),
+    import(/* webpackChunkName: "HelloWorld2" */ './components/HelloWorld2.vue')
 ]).then(([module1, module2]) => {
 
     Vue.component(module1.default.name, module1.default)
