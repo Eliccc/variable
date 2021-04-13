@@ -1,19 +1,6 @@
 # variable
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+可以调整内部二级组件顺序的组件
+目标:
+  二级组件在打包后文件名不变
+  二级组件可随代码一起build，也可在build后上传至二级组件目录下使用
